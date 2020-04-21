@@ -81,8 +81,9 @@ In a reflected XSS attack, the attack is in the request itself (frequently the U
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal"></h1>
+      <h1 class="w3-text-teal"> Path traversal</h1>
       <p>
+        Most web applications serve static resources like images and CSS files. Frequently, applications simply serve all the files in a folder. If the application isn't careful, the user can use a path traversal attack to read files from other folders that they shouldn't have access to. For example, in both Windows and Linux, .. represents the parent directory, so if you can inject ../ in a path you can "escape" to the parent directory.
       </p>
     </div>
     <div class="w3-third w3-container">
